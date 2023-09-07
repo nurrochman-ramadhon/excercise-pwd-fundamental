@@ -180,13 +180,10 @@ let hasil = "";
 let variabel = 5;
 
 // Process
-  for (let i = 0; i < variabel; i++) {
+for (i = 0; i < variabel; i++) {
     for (j = 0; j < i; j++) {
-        if (j < i) {
-            hasil +="1"
-        } else {
-            hasil +="0" 
-        }
-        }
-    }
-  console.log(hasil);
+        hasil = hasil + "0";
+    } 
+    hasil = hasil + "1\n"
+}
+console.log(hasil);
