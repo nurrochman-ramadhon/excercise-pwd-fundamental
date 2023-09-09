@@ -1,3 +1,4 @@
+// ===============================================================================================================
 // Periksa angka ganjil atau genap
 let x = 45
 if (x % 2 === 0) {
@@ -5,7 +6,7 @@ if (x % 2 === 0) {
 } else {
     console.log("ganjil");
 }
-
+// ===============================================================================================================
 // Nilai Bulan dari Get.Month()
 // Input : 2023-09-06
 const getMonth = new Date("2023-10-06").getMonth()
@@ -81,28 +82,30 @@ switch (getMonth) {
 }
 console.log(output);
 
-
+// ===============================================================================================================
 // Convert celsius to Fahrenhit
 // Input 
 let celsius = 1;
 
 // Process
-let celToFahr = celsius * 1.8 + 32; 
+let celToFahr = celsius * 1.8 + 32;
 
 // output
 console.log(celToFahr);
 
+// ===============================================================================================================
 // Check apakah Bilangan prima atau tidak
 //  Input
-let number = 17 ;
+let number = 17;
 
 // Process dan Output
-let berapakali="";
+let berapakali = "";
 for (let i = 1; i <= number; i++) {
     if (number % i == 0) {
-        berapakali ++;
+        berapakali++;
         console.log(berapakali);
-    }}
+    }
+}
 
 if (berapakali == 2) {
     console.log(number, "bilangan prima");
@@ -110,12 +113,13 @@ if (berapakali == 2) {
     console.log(number, "bukan prima");
 }
 
+// ===============================================================================================================
 // Write a code to find the sum of the numbers 1 to N
 // Input
 let angka = 6
 let sum = 0
 
-for (i=1; i<=angka; i++) {
+for (i = 1; i <= angka; i++) {
     console.log(i);
     sum += i
 }
@@ -123,13 +127,14 @@ for (i=1; i<=angka; i++) {
 console.log(angka);
 console.log(sum);
 
+// ===============================================================================================================
 // Write a code to find the FACTORIAL of the numbers 1 to N
 // Input
 
 let angka2 = 6
 let sum2 = 1
 
-for (i=1; i<=angka2; i++) {
+for (i = 1; i <= angka2; i++) {
     console.log(i);
     sum2 *= i
 }
@@ -137,28 +142,34 @@ for (i=1; i<=angka2; i++) {
 console.log(angka2);
 console.log(sum2);
 
-// // Write a code to find the sum of the numbers 1 to N
-// Input
-let n1 = 1;
-let n2 = 1;
-let fn;
-let n = 0;
+// ===============================================================================================================
+// Generate FIBONACI
+// INPUT  : variabel n1 = 0, n2 = 1, n;
 
-if (n<=2) {
-    fn = n
-}
+n1 = 0;
+n2 = 1;
+n = 1;
+// OUTPUT : deret fibonaci pada variabel output
+output = "";
+// PROCESS :
+// 1. Proses pemeriksaan nilai dari suku n1 hingga suku ke n ditentukan
+for (let i = 1; i <= n; i++) {
 
-for (let i = 2; i < n; i++){
-    fn = n1 + n2
+    console.log(i);
+    output += `${n1} `
+// 3. Menggeser n1 dan n2 mengikuti suku ke n
+    let nextN = n1 + n2
+    console.log(nextN);
     n1 = n2
-    n2 = fn
+    n2 = nextN
 }
+console.log(output);
 
-console.log(fn);
 
+// ===============================================================================================================
 // Code for Patern 1
 // input 
-let result ="";
+let result = "";
 
 // Process
 for (let i = 0; i < 8; i++) {
@@ -167,13 +178,14 @@ for (let i = 0; i < 8; i++) {
             result += "#";
         } else {
             result += "*";
-        } 
-    } result += "\n";    
+        }
+    } result += "\n";
 }
 
 // OUTPUT
 console.log(result);
 
+// ===============================================================================================================
 // Code for Patern 2
 // input
 let hasil = "";
@@ -181,9 +193,10 @@ let variabel = 5;
 
 // Process
 for (i = 0; i < variabel; i++) {
+    console.log(i);
     for (j = 0; j < i; j++) {
-        hasil = hasil + "0";
-    } 
-    hasil = hasil + "1\n"
+        hasil += "0";
+    }
+    hasil += "1\n"
 }
 console.log(hasil);
